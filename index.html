@@ -1,344 +1,188 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <title>Sathiya Narayanan Venkatesan | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+  <!-- Navigation -->
+  <nav id="navbar" class="nav">
+    <div class="nav-inner">
+      <div class="logo"></div>
+      <div class="nav-links">
+        <button class="nav-link active" data-target="home">Home</button>
+        <button class="nav-link" data-target="about">About</button>
+        <button class="nav-link" data-target="experience">Experience</button>
+        <button class="nav-link" data-target="projects">Projects</button>
+        <button class="nav-link" data-target="contact">Contact</button>
+      </div>
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </header>
-    <!-- End header -->
+  </nav>
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Sathiya Narayanan Venkatesan</h1>
-            <h2>Software Engineer</h2>
-            <a href="./docs/resume.pdf" download="SathiyaNarayanan_Venkatesan_Resume.pdf" target="_blank" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
+  <!-- Hero Section -->
+  <section id="home" class="section hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          Sathiya Narayanan Venkatesan
+        </h1>
+        <p class="hero-subtitle">Software Engineer</p>
+        <p class="hero-desc">Building scalable systems with cloud-native technologies</p>
+      </div>
 
-        <div id="lead-overlay"></div>
+      <div class="hero-icons">
+        <a href="mailto:sathiyavenkat06@gmail.com" class="icon-btn" aria-label="Email">
+          ✉
+        </a>
+        <a href="tel:919-559-6057" class="icon-btn" aria-label="Phone">
+          ☎
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="GitHub">
+          <span class="icon-text">GH</span>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="icon-btn" aria-label="LinkedIn">
+          in
+        </a>
+      </div>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
+      <div class="hero-location">
+        <span class="pin">📍</span>
+        <span>Raleigh, NC</span>
+      </div>
+
+      <button class="scroll-down" data-target="about" aria-label="Scroll to About section">
+        ⌄
+      </button>
     </div>
-    <!-- End #lead -->
+  </section>
 
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        I'm a passionate and versatile software engineer with a deep love for crafting elegant code and solving complex problems. My technical expertise spans across programming languages like Python, Java, JavaScript and I'm constantly seeking out new tools and frameworks to stay at the forefront of technology. In addition to my technical abilities, I'm a strong advocate for best practices in software engineering, including code maintainability, scalability, and security. I'm always eager to learn from others and share my knowledge with the community.   
-                    </p>
-                </div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-grid">
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">🎓</span>
+            <h3 class="card-title">Education</h3>
+          </div>
+          <div class="card-body">
+            <div class="edu-item">
+              <p class="edu-school">North Carolina State University</p>
+              <p class="edu-degree">Master of Computer Science</p>
+              <p class="edu-meta">GPA: 3.9/4.0 | Aug 2023 – May 2025</p>
             </div>
+            <div class="edu-item">
+              <p class="edu-school">Anna University</p>
+              <p class="edu-degree">B.E. Computer Science Engineering</p>
+              <p class="edu-meta">GPA: 9.3/10 | Aug 2019 – Apr 2023</p>
+            </div>
+          </div>
         </div>
-    </div>
-    <!-- End #about -->
 
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>North Carolina State University</h3>
-            <span class="education-date">Aug 2023 - May 2025</span>
-            <h4>Masters in Computer Science</h4>
-            <p>
-               <b>Course Work:</b> Algorithms, Neural Networks and Deep Learning, Automated Software Engineering, Cloud Computing, Computer Networks Security, Software Security
+        <div class="card">
+          <div class="card-header">
+            <span class="card-icon">🏅</span>
+            <h3 class="card-title">Certifications</h3>
+          </div>
+          <div class="card-body">
+            <p class="cert-name">AWS Solutions Architect – Associate</p>
+            <p class="cert-desc">
+              Proficient in CloudFront, DynamoDB, SQS, SNS, EventBridge, CloudWatch, S3, and RDS
             </p>
+          </div>
         </div>
-        <!-- End .education-block -->
+      </div>
 
-        <div class="education-block">
-            <h3>SKCET, Anna University </h3>
-            <span class="education-date">Aug 2019 - April 2023</span>
-            <h4>Bachelor of Engineering in Computer Science</h4>
-            <p>
-                <b>Course Work:</b> Artificial Intelligence, Advanced Java Programming, Data Structures, Data Analytics, DBMS.
-            </p>
+      <div class="card skills-card">
+        <h3 class="skills-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div>
+            <h4 class="skills-heading">Languages</h4>
+            <div class="skills-chips" id="skills-languages"></div>
+          </div>
+          <div>
+            <h4 class="skills-heading">Tools &amp; Frameworks</h4>
+            <div class="skills-chips" id="skills-tools"></div>
+          </div>
+          <div>
+            <h4 class="skills-heading">Cloud &amp; DevOps</h4>
+            <div class="skills-chips" id="skills-cloud"></div>
+          </div>
         </div>
-        <!-- End .education-block -->
+      </div>
     </div>
-    <!-- End #education -->
+  </section>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="July 2022 – May 2023">
-                <h3>Zoho Corporation</h3>
-                <h4>SDE Intern</h4>
-                <p>
-                    Maintained a bug reporting web application by adding different features and optimizing the video recording functionality of the tool, achieved 80% increase in accuracy of recorded bugs.
-                </p>
-            </div>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
 
-            <div data-date="April 2022 – June 2022">
-                <h3>Zoho Corporation</h3>
-                <h4>Summer Intern</h4>
-                <p>
-                    Learned and applied Object Oriented Programming Concepts, Design Patterns, Version control systems. Designed, built,and deployed a web application using JSP (JavaServer Pages) and Servlet on Tomcat standalone server.
-                </p>
-            </div>
+      <div id="experience-list" class="experience-list"></div>
 
-        </div>
-    </div>
-    <!-- End #experience -->
-
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img width="311" height="311" src="images/covibot.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>IntelliChat</h3>
-                        <p>
-                        IntelliChat is an advanced Retrieval-Augmented Generation (RAG) chatbot powered by OpenAI's GPT model and LangChain, designed for precise, context-aware responses. It features a robust text processing pipeline using RecursiveCharacterTextSplitter and OpenAI embeddings, integrated with a Chroma vector database for efficient data handling. IntelliChat excels in scalability and rapid query retrieval, making it ideal for research, customer support, and educational applications. It exemplifies cutting-edge AI innovation with practical implementation.  
-                        </p>
-                        <a href="https://github.com/sathiya06/RAG-AI-Bot">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img width="311" height="311" src="images/fsl.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>SWAY - Surrogate Learner</h3>
-                        <p>
-                            Improved an active learning surrogate model by adeptly updating the learner for every new data instance and
-                            yielding results, either rivaling or aligning with state-of-the-art techniques. Synthesized datasets to the above learner to enable it to perform different machine learning tasks such as NLP.
-                        </p>
-                        View Contributions - <a href="https://github.com/ase-spring24-team/project">1</a>,<a href="https://github.com/sathiya06/Tf-IDF">2</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img width="311" height="311" src="images/mapese.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Mapease - Livestock Disease Tracking System </h3>
-                        <p>
-                            Streamlined monitoring of seasonal disease spread by tracking the movement of the livestock. Spearheaded a web application with a Spring Boot backend using JPA for data persistence and an Angular
-                            frontend featuring interactive maps built with Leaflet module in Angular. 
-                        </p>
-                         <!--  <a href="#">View Project</a> -->
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img width="311" height="311" src="images/FileShare.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>File Share</h3>
-                        <p>
-                            Created a user-friendly file sharing Website using Firebase as the backend, lowering the file upload
-                            time to under 5 seconds. Implemented React JS to enhance the performance and responsiveness of the file sharing platform.
-                            Devised a QR code generator that automatically generates a unique QR code for each uploaded file, providing users with an
-                            easy and convenient way to download their files. Integrated secure file transfers using Diffie-Hellman key exchange protocol and AES-GCM for encryption and integrity verification.
-                        </p>
-                        <!-- <a href="https://github.com/EncrypteD6/SafeShare">View Project</a> -->
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img width="311" height="311" src="images/alzi.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Early Detection Of Alzheimer's Disease</h3>
-                        <p>
-                            Trained a CNN model in Python, TensorFlow, and NumPy to diagnose different stages of Alzheimer’s
-                            disease from MRI reports. Constructed a dataset of 6400 MRI images after skull stripping the MRI images using the FSL
-                            library. Attained an accuracy of 80% when tested on a dataset of 2000 MRI images with a cross-entropy loss function    
-                        </p>
-                        <a href="https://github.com/sathiya06/Early-Detection-Of-Alzheimer-s-Disease">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img width="311" height="311" src="https://github.com/SE23-Team44/slash-phase4/raw/main/assets/slash.png" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Slash - Online Shopping Application Scraper</h3>
-                        <p>
-                            Worked on a web scraping project implemented utilizing Beautiful Soup. Implemented secure user-based
-                            login with PostgreSQL and JWT. Successfully resolved challenges related to data consistency, resulting in a 20%
-                            improvement in data accuracy. Implemented a wishlist feature, making it easy for users to save and access search results.
-                            Added currency conversion, allowing users to view results in their preferred currency. Added a download option for search
-                            results to be downloaded in CSV format, enhancing utility.  
-                        </p>
-                        <a href="https://github.com/SE23-Team44/slash">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>SQL</li>
-            <li>Go</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JSON</li>
-            <li>JQuery</li>
-            <li>PHP</li>
-            <li>React JS</li>
-            <li>Flask</li>
-            <li>Bootstrap</li>
-            <li>Spring</li>
-            <li>Ruby on Rails</li>
-            <li>OAuth</li>
-            <li>REST APIs</li>
-            <li>TensorFlow</li>
-            <li>NumPy</li>
-            <li>Keras</li>
-            <li>Git</li>
-            <li>VS Code</li>
-            <li>IntelliJ</li>
-            <li>Google Colab</li>
-            <li>Eclipse</li>
-            <li>Docker</li>
-            
+      <div class="card">
+        <h3 class="exp-subtitle">
+          <span class="card-icon">👨‍💻</span>
+          Open Source Contributions
+        </h3>
+        <p class="exp-text">
+          Active contributor to OpenEMR, Argo CD, Prometheus, and Syft
+        </p>
+        <ul class="exp-bullets">
+          <li>
+            <span class="bullet">▹</span>
+            <span>Improved application security by assessing OWASP ASVS standards compliance</span>
+          </li>
+          <li>
+            <span class="bullet">▹</span>
+            <span>Designed custom Prometheus metrics for Daily Active Users tracking</span>
+          </li>
         </ul>
+      </div>
     </div>
-    <!-- End #skills -->
+  </section>
 
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/f/mleyawpk">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <div id="projects-grid" class="projects-grid"></div>
     </div>
-    <!-- End #contact -->
+  </section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2024</span> sathiya06
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/sathiya06" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <!-- <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li> -->
-                        <li>
-                            <a href="https://linkedin.com/in/sathiya06" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <!-- <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End footer -->
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-text">
+        I'm currently open to new opportunities and collaborations. Feel free to reach out!
+      </p>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+      <div class="contact-grid">
+        <a href="mailto:sathiyavenkat06@gmail.com" class="card contact-card">
+          <div class="contact-icon">✉</div>
+          <p class="contact-label">Email</p>
+          <p class="contact-value">sathiyavenkat06@gmail.com</p>
+        </a>
+
+        <a href="tel:919-559-6057" class="card contact-card">
+          <div class="contact-icon">☎</div>
+          <p class="contact-label">Phone</p>
+          <p class="contact-value">(919) 559-6057</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Sathiya Narayanan Venkatesan. Built with HTML, CSS &amp; JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-
 </html>
